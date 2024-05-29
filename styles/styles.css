@@ -1,3 +1,15 @@
+/* fonts Custom*/
+@font-face {
+    font-family: "windDoomsDay";
+    src: url(../src/fonts/windDoomsDay.woff);
+}
+
+/* Tailwind bases */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* css 
+body {
+    font-family: "windDoomsDay";
+}*/

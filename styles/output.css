@@ -1,6 +1,14 @@
-/*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
-*/
+/* fonts Custom*/
+
+@font-face {
+  font-family: "windDoomsDay";
+
+  src: url(../src/fonts/windDoomsDay.woff);
+}
+
+/* Tailwind bases */
+
+/* ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -558,6 +566,22 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -566,44 +590,32 @@ video {
   display: flex;
 }
 
-.h-\[100px\] {
-  height: 100px;
-}
-
-.h-\[650px\] {
-  height: 650px;
-}
-
 .h-\[80px\] {
   height: 80px;
 }
 
-.h-\[120px\] {
-  height: 120px;
+.h-auto {
+  height: auto;
 }
 
 .w-1\/2 {
   width: 50%;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
 .w-\[500px\] {
   width: 500px;
 }
 
+.w-\[600px\] {
+  width: 600px;
+}
+
 .w-full {
   width: 100%;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-32 {
-  width: 8rem;
-}
-
-.w-36 {
-  width: 9rem;
 }
 
 .max-w-6xl {
@@ -638,12 +650,12 @@ video {
   gap: 0.5rem;
 }
 
-.gap-7 {
-  gap: 1.75rem;
-}
-
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-7 {
+  gap: 1.75rem;
 }
 
 .border {
@@ -655,14 +667,9 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.bg-blue-200 {
+.bg-blue-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
-}
-
-.bg-blue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
 }
 
 .bg-primary {
@@ -680,12 +687,21 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-20 {
   padding: 5rem;
 }
 
 .p-24 {
   padding: 6rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .text-center {
@@ -695,6 +711,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-5xl {
@@ -712,16 +733,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -734,9 +745,9 @@ video {
   font-weight: 100;
 }
 
-.text-primary {
+.text-forth {
   --tw-text-opacity: 1;
-  color: rgb(31 0 190 / var(--tw-text-opacity));
+  color: rgb(0 70 254 / var(--tw-text-opacity));
 }
 
 .text-secondary {
@@ -749,7 +760,35 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-forth {
-  --tw-text-opacity: 1;
-  color: rgb(0 70 254 / var(--tw-text-opacity));
+/* css 
+body {
+    font-family: "windDoomsDay";
+}*/
+
+@media (min-width: 640px) {
+  .sm\:object-contain {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:object-fill {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:object-none {
+    -o-object-fit: none;
+       object-fit: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:object-scale-down {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+  }
 }
