@@ -3,7 +3,7 @@
 @font-face {
   font-family: "windDoomsDay";
 
-  src: url(../src/fonts/windDoomsDay.woff);
+  src: url(../src/fonts/WindDoomsdayBold.ttf);
 }
 
 /* Tailwind bases */
@@ -618,10 +618,6 @@ video {
   width: 9rem;
 }
 
-.w-\[500px\] {
-  width: 500px;
-}
-
 .w-\[600px\] {
   width: 600px;
 }
@@ -715,6 +711,14 @@ video {
   text-align: center;
 }
 
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.font-single {
+  font-family: windDoomsDay, sans-serif;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -781,10 +785,9 @@ video {
   transition-duration: 100ms;
 }
 
-/* css 
-body {
-    font-family: "windDoomsDay";
-}*/
+h1 {
+  font-family: "windDoomsDay";
+}
 
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;

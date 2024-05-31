@@ -9,9 +9,9 @@ module.exports = {
         "third":"#f6f6f6",
         "forth":"#0046fe"
       },
-     /* fontFamily:{
-        single:['windDoomday','sans']
-      } */
+     fontFamily:{
+        single:['windDoomsDay','sans-serif']
+      } 
     },
   },
   plugins: [],
