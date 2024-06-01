@@ -1,9 +1,27 @@
 /* fonts Custom*/
 
 @font-face {
-  font-family: "windDoomsDay";
+  font-family: "WindDoomsday";
 
-  src: url(../src/fonts/WindDoomsdayBold.ttf);
+  src: url("../src/fonts/WindDoomDay/WindDoomsdayBold.ttf");
+}
+
+@font-face {
+  font-family: "Metropolis";
+
+  src: url("../src/fonts/metropolis/Metropolis-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Metropolis_semibold";
+
+  src: url("../src/fonts/metropolis/Metropolis-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Metropolis_bold";
+
+  src: url("../src/fonts/metropolis/Metropolis-Bold.ttf");
 }
 
 /* Tailwind bases */
@@ -711,12 +729,16 @@ video {
   text-align: center;
 }
 
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.font-Metropolis {
+  font-family: Metropolis, sans-serif;
 }
 
 .font-single {
-  font-family: windDoomsDay, sans-serif;
+  font-family: WindDoomsday, sans-serif;
+}
+
+.font-Metropolis_bold {
+  font-family: Metropolis_bold, sans-serif;
 }
 
 .text-2xl {
@@ -754,6 +776,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -771,6 +798,11 @@ video {
   color: rgb(0 70 254 / var(--tw-text-opacity));
 }
 
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(31 0 190 / var(--tw-text-opacity));
+}
+
 .text-secondary {
   --tw-text-opacity: 1;
   color: rgb(43 207 219 / var(--tw-text-opacity));
@@ -786,12 +818,12 @@ video {
 }
 
 h1 {
-  font-family: "windDoomsDay";
+  font-family: "WindDoomsday";
 }
 
-.hover\:text-primary:hover {
+.hover\:text-black:hover {
   --tw-text-opacity: 1;
-  color: rgb(31 0 190 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {

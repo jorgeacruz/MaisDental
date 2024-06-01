@@ -10,7 +10,10 @@ module.exports = {
         "forth":"#0046fe"
       },
      fontFamily:{
-        single:['windDoomsDay','sans-serif']
+        single:['WindDoomsday','sans-serif'],
+        Metropolis:['Metropolis','sans-serif'],
+        Metropolis_bold:['Metropolis_bold','sans-serif'],
+        Metropolis_semibold:['Metropolis_semibold','sans-serif']
       } 
     },
   },

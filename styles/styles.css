@@ -1,7 +1,21 @@
 /* fonts Custom*/
 @font-face {
-    font-family: "windDoomsDay";
-    src: url(../src/fonts/WindDoomsdayBold.ttf);
+    font-family: "WindDoomsday";
+    src: url("../src/fonts/WindDoomDay/WindDoomsdayBold.ttf");
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../src/fonts/metropolis/Metropolis-Regular.ttf");
+    
+}
+@font-face {
+    font-family: "Metropolis_semibold";
+    src: url("../src/fonts/metropolis/Metropolis-SemiBold.ttf");
+}
+@font-face {
+    font-family: "Metropolis_bold";
+    src: url("../src/fonts/metropolis/Metropolis-Bold.ttf");
 }
 
 /* Tailwind bases */
@@ -10,4 +24,4 @@
 @tailwind utilities;
 
 
-h1 { font-family: "windDoomsDay";}
+h1 { font-family: "WindDoomsday"; }
