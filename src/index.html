@@ -7,119 +7,18 @@
     <link rel="stylesheet" href="../styles/output.css">
     
 </head>
-<body>
-    <!--- menu -->
-    <section>
-        <div class="w-full h-[80px] bg-white flex justify-center items-center fixed z-10">
-            <div class="w-full max-w-6xl bg-white flex justify-between items-center">
-                <img src="./images/logo.jpg" alt="Vantagens MaisDental" title="Vantagens MaisDental" class="w-36" />
-                <div>
-                    <ul class="flex flex-row justify-around items-center w-[600px]">
-                        <li class="font-semibold text-primary hover:text-black duration-100">Home</li>
-                        <li class="font-semibold text-primary hover:text-black duration-100"><a href="#credenciadas">Credenciadas</a></li>
-                        <li class="font-semibold text-primary hover:text-black duration-100"><a href="#procedimentos">Procedimentos</a></li>
-                        <li class="font-semibold text-primary hover:text-black duration-100"><a href="#planos">Planos Odontológicos</a></li>
-                        <li class="font-semibold text-primary hover:text-black duration-100"><a href="#contato">Fale Conosco</a></li>
-                    </ul>
-                </div>
+<body class="bg-yellow-600">
+    <!-- menu principal -->
+    <section class="w-full h-14 bg-white flex justify-center items-center">
+        <div class="w-full max-w-7xl flex flex-row justify-between items-center px-3">
+            <div class="border border-black h-12 flex items-center">
+                <img src="../src/images/logo.jpg" alt="" title="" class="w-32"/>
             </div>
-        </div>
-    </section>
-     <!-- Banner -->
-    <section>
-        <div class="w-full bg-blue-100 h-auto">
-            <img src="./images/smile.jpg" alt="" class="w-full h-auto object-cover sm:object-contain md:object-fill lg:object-none xl:object-scale-down" />
-        </div>    
-    </section>
-    <!-- Section Azul -->
-    <section>
-        <div class="w-full p-24 bg-primary flex flex-col items-center justify-center gap-7">
-            <!-- titles -->
-            <div class="flex flex-col justify-center text-white text-center gap-2 mb-6">
-                <h1 class="text-7xl font-single">Muito mais que</h1>
-                <h1 class="text-6xl font-single">planos odontológicos,</h1>
-                <h2 class="text-3xl font-Metropolis_bold text-secondary">soluções criadas especialmente</h2>
-                <h2 class="text-3xl font-Metropolis_bold text-secondary">para você ter o melhor sorriso!</h2>
+            <div class="border border-black w-6 h-12">
+                <ul>
+                    <li>Home</li>
+                </ul>
             </div>
-            <!-- numbers -->
-            <div class="w-1/2 flex justify-around items-center">
-                <div class="flex flex-col justify-center items-center text-white">
-                    <h1 class="text-5xl font-single">+10K</h1>
-                    <h3 class="text-lg font-thin">dentistas credenciados</h3>
-                </div>
-                <div class="flex flex-col justify-center items-center text-white">
-                    <h1 class="text-5xl font-single">+6K</h1>
-                    <h3 class="text-lg font-thin">beneficiários</h3>
-                </div>
-                <div class="flex flex-col justify-center items-center text-white">
-                    <h1 class="text-5xl font-single">+50K</h1>
-                    <h3 class="text-lg font-thin">procedimentos realizados</h3>
-                </div>
-                <div class="flex flex-col justify-center items-center text-white">
-                    <h1 class="text-5xl font-single">cobertura</h1>
-                    <h3 class="text-lg font-thin">RJ, SP, MG e DF</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Sejam Benvindos - CINZA -->
-    <section class="w-full p-20 bg-third flex flex-col gap-6 justify-center items-center ">
-        <!-- Title H1 -->
-        <div class="w-full max-w-6xl flex flex-col gap-2 text-6xl text-forth font-bold">
-            <h1>Sejam bem-vindos</h1>
-            <h1>à MaisDental:</h1>
-        </div>
-        <!-- Title H2 -->
-        <div class="w-full max-w-6xl flex flex-col gap-2 text-5xl text-secondary font-Metropolis_bold">
-            <h2>a primeira e única operadora</h2>
-            <h2>de planos odontológicos</h2>
-            <h2>com cobertura estética</h2>
-            <h2>regulamentada no Brasil.</h2>
-        </div>
-    </section>
-    <!-- Rede Credenciada -->
-    <span id="credenciadas" class="mt-10"></span>
-    <section class="w-full p-10 flex flex-col gap-6 justify-center items-center ">
-        <div class="w-full max-w-6xl flex flex-col">
-            <h1 class="text-4xl text-forth font-bold">Rede Credenciada</h1>
-            <h1 class="text-6xl text-secondary font-bold">que mais cresce</h1>
-            <h1 class="text-6xl text-secondary font-bold">no Brasil...</h1>
-            <h4 class="mt-5">2023</h4>
-            <h1 class="counter-up text-4xl text-forth font-bold" data-count-to="10684"></h1>
-            <img src="./images/grafico1.png" alt="Atendimentos 2023" title="" />
-            <h4 class="mt-5 text-xl font-thin">Total de dentistas credenciados</h4>
-            <h1 class="counter-up text-7xl text-forth font-bold" data-count-to="10347"></h1>
-        </div>
-    </section>
-     <!-- ... a mais proxima de voce -->
-     <section class="w-full flex justify-center items-center">
-        <div class="w-full max-w-6xl flex flex-row justify-between">
-            <div class="absolute pt-10 w-[600px]">
-                <h1 class="text-6xl text-secondary font-bold">... a mais próxima</h1>
-                <h1 class="text-6xl text-secondary font-bold">de você.</h1>
-                <h3 class="text-3xl font-bold mt-8">Rio de Janeiro</h3>
-                <h3 class="text-2xl font-thin">São Paulo</h3>
-                <h3 class="text-2xl font-thin">Distrito Federal</h3>
-                <h3 class="text-2xl font-thin">Minas Gerais</h3>
-            </div>
-            <div class="relative inset-0 w-full">
-                <img src="./images/mapa.png" alt="Unidade mais Próxima" title="Unidade mais Próxima" />
-            </div>
-        </div>
-    </section>
-    <!-- Procedimentos Realizados - CINZA -->
-    <span id="procedimentos" class="mt-10"></span>
-    <section class="w-full p-20 bg-third flex flex-col gap-6 justify-center items-center ">
-        <div class="w-full max-w-6xl flex flex-col">
-            <h1 class="text-4xl text-forth font-bold">Procedimentos</h1>
-            <h1 class="text-4xl text-forth font-bold">realizados</h1>
-            <h1 class="text-6xl text-secondary font-bold">com os melhores</h1>
-            <h1 class="text-6xl text-secondary font-bold">profissionais</h1>
-            <h4 class="mt-5">2023</h4>
-            <h1 class="counter-up text-4xl text-forth font-bold" data-count-to="45875"></h1>
-            <img src="./images/grafico1.png" alt="Atendimentos 2023" title="" />
-            <h4 class="mt-5 text-xl font-thin">Total de procedimentos realizados</h4>
-            <h1 class="counter-up text-7xl text-forth font-bold" data-count-to="50920"></h1>
         </div>
     </section>
 </body>
