@@ -8,7 +8,47 @@
     
 </head>
 <body class="bg-white">
-    <!-- menu principal -->
+    <header class="p-3 bg-white fixed w-full">
+        <div class="container mx-auto flex justify-between items-center">
+          <img class="w-32" src="./images/logo.jpg" alt="Mais Dental - Vantagens">
+      <div>
+        <button id="toggle-menu-button" class="z-50 md:hidden relative">
+          <span class="sr-only">Toggle Menu</span>
+          <div id="open" class="h-7 flex flex-col items-end justify-between">
+            <span class="block h-0.5 w-8 bg-primary rounded-full"></span>
+            <span class="block h-0.5 w-6 bg-primary rounded-full"></span>
+            <span class="block h-0.5 w-8 bg-primary rounded-full"></span>
+          </div>
+          <div  id="close" class="hidden h-7 flex flex-col items-end justify-between">
+            <span class="block h-0.5 w-8 bg-white rounded-full origin-left transform rotate-45 translate-y-0.5"></span>
+          <span class="block h-0.5 w-8 bg-white rounded-full origin-left transform -rotate-45 -translate-y-0.5"></span>
+          </div>
+        </button>
+        <div id="toggle-menu" class="hidden md:block font-Metropolis_semibold text-white text-center text-2xl bg-primary bg-opacity-80 fixed top-0 left-0 h-screen w-screen flex flex-col items-center justify-center md:text-lg md:relative md:text-primary md:bg-transparent md:w-auto md:h-auto md:text-left">
+          <ul class="flex flex-col gap-y-7 md:flex-row md:gap-2">
+          <li class="md:border-r md:px-4 md:border-red-200">
+            <a href="" title"Go to XXX" class="transition ease-in-out duration-150 hover:text-black">Home</a></li>
+          <li class="md:border-r md:px-4 md:border-red-200">
+            <a href="" title"Go to XXX" class="transition ease-in-out duration-150 hover:text-black">Rede credenciadas</a>
+          </li>
+          <li class="md:border-r md:px-4 md:border-red-200">
+            <a href="" title"Go to XXX" class="transition ease-in-out duration-150 hover:text-black">Procedimentos Realizados</a>
+          </li>
+          <li class="md:border-r md:px-4 md:border-red-200">
+            <a href="" title"Go to XXX" class="transition ease-in-out duration-150 hover:text-black">Planos Odontológicos</a>
+          </li>
+          <li class="md:border-r md:px-4 md:border-red-200">
+            <a href="" title"Go to XXX" class="transition ease-in-out duration-150 hover:text-black">Fale Conosco</a>
+          </li>
+          
+        </ul>
+        </div>
+      </div>
+        </div>
+      </header>
+
+
+    <!-- menu principal 
     <section class="w-full h-14 bg-white flex justify-center items-center fixed">
         <div class="w-full max-w-6xl flex flex-row justify-between items-center px-3">
             <div class="h-12 flex items-center">
@@ -23,15 +63,15 @@
                     <li class="font-semibold text-primary hover:text-black duration-100"><a href="#contato">Fale Conosco</a></li>
                 </ul>
             </div>
-            <!-- hamburguer menu -->
-            <button class="md:hidden">
+            <!-- hamburguer menu 
+            <button class="md:hidden" id="toggle-menu-button">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.0" stroke="#fff" class="size-6 bg-primary p-2 rounded">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg> 
             </button>
-            <!-- hamburguer menu -->
+             hamburguer menu
         </div>
-    </section>
+    </section> -->
     <!-- Banner -->
     <section class="w-full bg-blue-100 h-auto">
         <img src="./images/smile.jpg" alt="" class="w-full h-auto object-cover sm:object-contain md:object-fill lg:object-none xl:object-scale-down" />

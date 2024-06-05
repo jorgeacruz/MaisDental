@@ -1,3 +1,17 @@
+
+//menu principal
+var button = document.querySelector('#toggle-menu-button');
+var menu = document.querySelector('#toggle-menu');
+var open = document.querySelector('#open');
+var close = document.querySelector('#close');
+
+button.addEventListener('click', (e)=>{
+  menu.classList.toggle('hidden');
+  open.classList.toggle('hidden');
+  close.classList.toggle('hidden');
+});
+
+//contagem de numeros
 const tempo_intervalo = 10; //ms -> define a velocidade da animação
 const tempo = 1000; //ms -> define o tempo total da animaçao
 
