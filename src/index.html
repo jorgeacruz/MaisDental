@@ -7,20 +7,171 @@
     <link rel="stylesheet" href="../styles/output.css">
     
 </head>
-<body class="bg-yellow-600">
+<body class="bg-white">
     <!-- menu principal -->
-    <section class="w-full h-14 bg-white flex justify-center items-center">
-        <div class="w-full max-w-7xl flex flex-row justify-between items-center px-3">
-            <div class="border border-black h-12 flex items-center">
+    <section class="w-full h-14 bg-white flex justify-center items-center fixed">
+        <div class="w-full max-w-6xl flex flex-row justify-between items-center px-3">
+            <div class="h-12 flex items-center">
                 <img src="../src/images/logo.jpg" alt="" title="" class="w-32"/>
             </div>
-            <div class="border border-black w-6 h-12">
-                <ul>
-                    <li>Home</li>
+            <div class="flex justify-center items-center h-12">
+                <ul class=" hidden md:w-[600px] md:flex flex-row justify-around items-center ">
+                    <li class="font-semibold text-primary hover:text-black duration-100">Home</li>
+                    <li class="font-semibold text-primary hover:text-black duration-100"><a href="#credenciadas">Credenciadas</a></li>
+                    <li class="font-semibold text-primary hover:text-black duration-100"><a href="#procedimentos">Procedimentos</a></li>
+                    <li class="font-semibold text-primary hover:text-black duration-100"><a href="#planos">Planos Odontológicos</a></li>
+                    <li class="font-semibold text-primary hover:text-black duration-100"><a href="#contato">Fale Conosco</a></li>
                 </ul>
+            </div>
+            <!-- hamburguer menu -->
+            <button class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.0" stroke="#fff" class="size-6 bg-primary p-2 rounded">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg> 
+            </button>
+            <!-- hamburguer menu -->
+        </div>
+    </section>
+    <!-- Banner -->
+    <section class="w-full bg-blue-100 h-auto">
+        <img src="./images/smile.jpg" alt="" class="w-full h-auto object-cover sm:object-contain md:object-fill lg:object-none xl:object-scale-down" />
+    </section>
+
+    <!-- sessão Azul -->
+    <section class="w-full p-4 bg-primary flex flex-col items-center justify-center gap-5 md:py-24">
+        <!-- titles -->
+        <div class="flex flex-col justify-center text-white text-center gap-2 mb-6">
+            <h1 class="text-4xl md:text-7xl font-single">Muito mais que</h1>
+            <h1 class="text-4xl md:text-7xl font-single">planos odontológicos,</h1>
+            <h2 class="text-2xl font-Metropolis_bold text-secondary md:text-3xl">soluções criadas especialmente</h2>
+            <h2 class="text-2xl font-Metropolis_bold text-secondary md:text-3xl">para você ter o melhor sorriso!</h2>
+        </div>
+        <!-- numbers -->
+        <div class="text-white text-center w-full flex justify-around items-start md:max-w-4xl">
+            <div>
+                <h1 class="text-2xl md:text-5xl font-single">+10K</h1>
+                <h3 class="text-xs md:text-lg font-thin">dentistas credenciados</h3>
+            </div>
+            <div>
+                <h1 class="text-2xl md:text-5xl font-single">+6K</h1>
+                <h3 class="text-xs md:text-lg font-thin">beneficiários</h3>
+            </div>
+            <div>
+                <h1 class="text-2xl md:text-5xl font-single">+50K</h1>
+                <h3 class="text-xs md:text-lg font-thin">procedimentos realizados</h3>
+            </div>
+            <div>
+                <h1 class="text-2xl md:text-5xl font-single">cobertura</h1>
+                <h3 class="text-xs md:text-lg font-thin">RJ, SP, MG e DF</h3>
             </div>
         </div>
     </section>
+
+    <!-- Sejam Benvindos - CINZA -->
+    <section class="w-full p-8 bg-third flex flex-col gap-6 justify-center items-center md:py-24">
+        <!-- Title H1 -->
+        <div class="w-full max-w-6xl flex flex-col gap-2 text-4xl text-forth font-single md:text-7xl">
+            <h1>Sejam bem-vindos</h1>
+            <h1>à MaisDental:</h1>
+        </div>
+        <!-- Title H2 -->
+        <div class="w-full max-w-6xl flex flex-col gap-1 text-3xl text-secondary font-Metropolis_bold md:text-5xl">
+            <h2>a primeira e única operadora</h2>
+            <h2>de planos odontológicos</h2>
+            <h2>com cobertura estética</h2>
+            <h2>regulamentada no Brasil.</h2>
+        </div>
+    </section>
+
+    <!-- Rede Credenciada -->
+    <section class="w-full h-auto p-8 flex flex-col gap-6 justify-center items-center md:py-24">
+        <div class="w-full max-w-6xl flex flex-col">
+            <h1 class="text-4xl text-forth font-single md:text-5xl">Rede Credenciada</h1>
+            <h1 class="text-3xl text-secondary font-Metropolis_bold md:text-5xl">que mais cresce</h1>
+            <h1 class="text-3xl text-secondary font-Metropolis_bold md:text-5xl">no Brasil...</h1>
+            <h4 class="mt-5">2023</h4>
+            <h1 class="counter-up text-4xl text-forth font-single" data-count-to="10684"></h1>
+            <img src="./images/grafico1.png" alt="Atendimentos 2023" title="" />
+            <h4 class="mt-5 text-xl font-thin">Total de dentistas credenciados</h4>
+            <h1 class="counter-up text-7xl text-forth font-single" data-count-to="10347"></h1>
+        </div>
+    </section>
+    
+    <!-- Procedimento Realizados-->
+    <section class="w-full p-8 bg-third flex flex-col gap-6 justify-center items-center md:p-20">
+        <div class="w-full max-w-6xl flex flex-col">
+            <h1 class="text-4xl text-forth font-single md:text-5xl">Procedimentos</h1>
+            <h1 class="text-4xl text-forth font-single md:text-5xl">realizados</h1>
+            <h1 class="text-3xl text-secondary font-Metropolis_bold md:text-5xl">com os melhores</h1>
+            <h1 class="text-3xl text-secondary font-Metropolis_bold md:text-5xl">profissionais</h1>
+            <h4 class="mt-5">2023</h4>
+            <h1 class="counter-up text-4xl text-forth font-bold" data-count-to="45875"></h1>
+            <img src="./images/grafico1.png" alt="Atendimentos 2023" title="" />
+            <h4 class="mt-5 text-sm font-thin">Total de procedimentos realizados</h4>
+            <h1 class="counter-up text-7xl text-forth font-single" data-count-to="50920"></h1>
+        </div>
+    </section>
+
+    <!-- Planos Odontologicos -->
+    <section class="w-full p-8 bg-third flex justify-center items-center md:py-16 md:flex flex-col  gap-6">
+        <div>
+            <h1 class="text-4xl text-primary font-single md:text-5xl">Planos Odontológicos</h1>
+        </div>
+        <div class="w-full max-w-6xl justify-center grid md:grid-cols-3 gap-3 ">
+            <!-- Plano Implante -->
+            <div class="bg-white shadow-md w-[350px] h-auto flex flex-col justify-start align-middle gap-5 rounded p-8 md:w-[360px] border-0 border-green-600 hover:border-4  hover:scale-105 duration-300">
+                <img src="../src/images/implate.png" alt="Planos Odontológicos" title="Planos Odontológicos" class="h-16 w-52"/>
+                <h3 class="font-bold text-green-600">DENTAL IMPLANTE MAIS</h3>
+                <p>
+                    Primeiro e único plano odontológico do Brasil com coberturas para implante + Enxerto ósseo + Tomografia computadorizada + Pino em titânio + Prótese sobre implante em porcelana, acrescido de mais 55 procedimentos extra rol.
+                </p>
+                <div class="flex flex-col justify-start flex-wrap gap-1">
+                    <p class="p-3 text-xs bg-green-100 rounded w-auto">Tomografia computadorizada</p>
+                    <p class="p-3 text-xs bg-green-100 rounded w-auto">Cobertura de enxerto ósseo</p>
+                    <p class="p-3 text-xs bg-green-100 rounded w-auto">Cobertura para implante unitário</p>
+                    <p class="p-3 text-xs bg-green-100 rounded w-auto">Prótese sobre implante em porcelana</p>
+                </div>
+                <button class="p-4 flex justify-center items-center bg-primary rounded-md shadow-md hover:bg-secondary text-white">
+                    Saiba mais...
+                </button>
+            </div>
+            <!-- Plano Ortho -->
+            <div class="bg-white shadow-md w-[350px] h-auto flex flex-col justify-start align-middle gap-5 rounded p-8 md:w-[360px] border-4 border-purple-600 hover:border-4 hover:scale-105 duration-300">
+                <img src="../src/images/ortho.png" alt="Planos Odontológicos" title="Planos Odontológicos" class="h-16 w-52"/>
+                <h3 class="font-bold text-purple-600">DENTAL ORTHO MAIS</h3>
+                <p>
+                    Tratamento bucal completo ( Rol ANS ) + Instalação de aparelho ortodôntico metálico + Manutenção mensal e Documentação Ortodôntica Simples (uma radiografia panorâmica, um traçado cefalométrico e três fotografias). Tudo perto de você.
+                </p>
+                <div class="flex flex-col justify-start flex-wrap gap-1">
+                    <p class="p-3 text-xs bg-purple-100 rounded w-auto">Restauração</p>
+                    <p class="p-3 text-xs bg-purple-100 rounded w-auto">Consultas e Limpezas</p>
+                    <p class="p-3 text-xs bg-purple-100 rounded w-auto">Documentação Ortodôntica Simples</p>
+                    <p class="p-3 text-xs bg-purple-100 rounded w-auto">e muito mais</p>
+                </div>
+                <button class="p-4 flex justify-center items-center bg-primary rounded-md shadow-md hover:bg-secondary text-white">
+                    Saiba mais...
+                </button>
+            </div>
+            <!-- Plano Invision -->
+            <div class="bg-white shadow-md w-[350px] h-auto gap-5 rounded p-8 flex flex-col justify-center md:w-[360px] border-0 border-primary hover:border-4 hover:scale-105 duration-300">
+                <img src="../src/images/invision.png" alt="Planos Odontológicos" title="Planos Odontológicos" class="h-16 w-52"/>
+                <h3 class="font-bold text-primary">DENTAL INVISÍVEL MAIS</h3>
+                <p>
+                    Primeiro plano odontológico completo (Rol da ANS) + Cobertura ortodôntica com alinhador invisível com instalação + Manutenção mensal + Documentação ortodôntica digital + Prótese unitária em dentes anteriores e posteriores em cerômero + Clareamento em gel (caseiro).
+                </p>
+                <div class="flex flex-col justify-start items-stretch gap-1">
+                    <p class="p-3 text-xs bg-blue-100 rounded w-auto">Clareamento em gel (caseiro)</p>
+                    <p class="p-3 text-xs bg-blue-100 rounded w-auto">Prótese unitária em dentes anteriores e posteriores em cerômero (na cor do dente)</p>
+                    <p class="p-3 text-xs bg-blue-100 rounded w-auto">Ortodontia com alinhador transparente (instalação, manutenção do alinhador e documentação ortodôntica digital)</p>
+                    <p class="p-3 text-xs bg-blue-100 rounded w-auto">e muito mais</p>
+                </div>
+                <button class="p-4 flex justify-center items-center bg-primary rounded-md shadow-md hover:bg-secondary text-white">
+                    Saiba mais...
+                </button>
+            </div>
+          </div>
+    </section>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="script.js"></script>
