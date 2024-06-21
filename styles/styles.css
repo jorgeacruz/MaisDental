@@ -26,3 +26,7 @@
 
 h1 { font-family: "WindDoomsday"; }
 p { font-size: 14px;}
+
+html {
+    scroll-behavior: smooth;
+  }
