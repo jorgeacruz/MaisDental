@@ -27,15 +27,15 @@
         <div id="toggle-menu" class="hidden md:block font-Metropolis_semibold text-white text-center text-2xl bg-primary bg-opacity-80 fixed top-0 left-0 h-screen w-screen flex flex-col items-center justify-center md:text-lg md:relative md:text-primary md:bg-transparent md:w-auto md:h-auto md:text-left">
           <ul class="flex flex-col gap-y-7 md:flex-row md:gap-2">
           <li class="md:border-r md:px-4 md:border-red-200">
-            <a href="" title"Go to XXX" class="transition ease-in-out duration-150 hover:text-black">Home</a></li>
+            <a href="#home" title="Home" class="transition ease-in-out duration-150 hover:text-black">Home</a></li>
           <li class="md:border-r md:px-4 md:border-red-200">
-            <a href="" title"Go to XXX" class="transition ease-in-out duration-150 hover:text-black">Rede credenciadas</a>
+            <a href="#credenciada" title"Go to XXX" class="transition ease-in-out duration-150 hover:text-black">Rede credenciadas</a>
           </li>
           <li class="md:border-r md:px-4 md:border-red-200">
-            <a href="" title"Go to XXX" class="transition ease-in-out duration-150 hover:text-black">Procedimentos Realizados</a>
+            <a href="#procedimentos" title"Go to XXX" class="transition ease-in-out duration-150 hover:text-black">Procedimentos Realizados</a>
           </li>
           <li class="md:border-r md:px-4 md:border-red-200">
-            <a href="" title"Go to XXX" class="transition ease-in-out duration-150 hover:text-black">Planos Odontológicos</a>
+            <a href="#planos" title"Go to XXX" class="transition ease-in-out duration-150 hover:text-black">Planos Odontológicos</a>
           </li>
           <li class="md:border-r md:px-4 md:border-red-200">
             <a href="" title"Go to XXX" class="transition ease-in-out duration-150 hover:text-black">Fale Conosco</a>
@@ -48,31 +48,8 @@
       </header>
 
 
-    <!-- menu principal 
-    <section class="w-full h-14 bg-white flex justify-center items-center fixed">
-        <div class="w-full max-w-6xl flex flex-row justify-between items-center px-3">
-            <div class="h-12 flex items-center">
-                <img src="../src/images/logo.jpg" alt="" title="" class="w-32"/>
-            </div>
-            <div class="flex justify-center items-center h-12">
-                <ul class=" hidden md:w-[600px] md:flex flex-row justify-around items-center ">
-                    <li class="font-semibold text-primary hover:text-black duration-100">Home</li>
-                    <li class="font-semibold text-primary hover:text-black duration-100"><a href="#credenciadas">Credenciadas</a></li>
-                    <li class="font-semibold text-primary hover:text-black duration-100"><a href="#procedimentos">Procedimentos</a></li>
-                    <li class="font-semibold text-primary hover:text-black duration-100"><a href="#planos">Planos Odontológicos</a></li>
-                    <li class="font-semibold text-primary hover:text-black duration-100"><a href="#contato">Fale Conosco</a></li>
-                </ul>
-            </div>
-            <!-- hamburguer menu 
-            <button class="md:hidden" id="toggle-menu-button">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.0" stroke="#fff" class="size-6 bg-primary p-2 rounded">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg> 
-            </button>
-             hamburguer menu
-        </div>
-    </section> -->
     <!-- Banner -->
+    <a id="home"></a>
     <section class="w-full bg-blue-100 h-auto">
         <img src="./images/smile.jpg" alt="" class="w-full h-auto object-cover sm:object-contain md:object-fill lg:object-none xl:object-scale-down" />
     </section>
@@ -121,11 +98,13 @@
             <h2>com cobertura estética</h2>
             <h2>regulamentada no Brasil.</h2>
         </div>
+        <a id="credenciada"></a>
     </section>
 
     <!-- Rede Credenciada -->
     <section class="w-full h-auto p-8 flex flex-col gap-6 justify-center items-center md:py-24">
         <div class="w-full max-w-6xl flex flex-col">
+           
             <h1 class="text-3xl text-forth font-single md:text-5xl">Rede Credenciada</h1>
             <h1 class="text-2xl text-secondary font-Metropolis_bold md:text-5xl">que mais cresce</h1>
             <h1 class="text-2xl text-secondary font-Metropolis_bold md:text-5xl">no Brasil...</h1>
@@ -135,6 +114,7 @@
             <h4 class="mt-5 text-xl font-thin">Total de dentistas credenciados</h4>
             <h1 class="counter-up text-7xl text-forth font-single" data-count-to="10347"></h1>
         </div>
+        <a id="procedimentos"></a>
     </section>
     
     <!-- Procedimento Realizados-->
@@ -150,6 +130,7 @@
             <h4 class="mt-5 text-sm font-thin">Total de procedimentos realizados</h4>
             <h1 class="counter-up text-7xl text-forth font-single" data-count-to="50920"></h1>
         </div>
+        <a id="planos"></a>
     </section>
 
     <!-- Planos Odontologicos -->
@@ -211,6 +192,40 @@
             </div>
           </div>
     </section>
+
+    <!-- Rodapé -->
+    <section class="w-full p-4 bg-primary flex items-center justify-center gap-5 md:py-24 ">
+        <div class="w-full max-w-6xl flex flex-col md:flex-row md:justify-around items-start border-white border ">
+            <div class="flex flex-col gap-2">
+                <h3 class="text-white font-single">INFORMATIVO ANS</h3>
+                <p class="text-white">
+                    Fique por dentro das últimas notícias, normas e informativos da Agência Nacional de Saúde (ANS). Consulte: Informativos ANS.
+                </p>
+            </div>
+            <div class="flex flex-col gap-2">
+                <h3 class="text-white font-single">INFORMATIVO ANS</h3>
+                <p class="text-white">
+                    Fique por dentro das últimas notícias, normas e informativos da Agência Nacional de Saúde (ANS). Consulte: Informativos ANS.
+                </p>
+                <h3 class="text-white font-single">TRABALHE CONOSCO</h3>
+                <p class="text-white">
+                    Cadastre o seu currículo aqui e venha fazer parte da nossa equipe.
+                </p>
+            </div>
+            <div class="flex flex-col gap-2">
+                <h3 class="text-white font-single">OUVIDORIA</h3>
+                <p class="text-white">
+                    As observações sobre o nosso atendimento são bem-vindas, por isso, a MaisDental conta com um canal de ouvidoria específico para solucionar problemas, receber sugestões e reclamações e atender aos casos que não foram resolvidos pela nossa Central de Atendimento. Entre em contato pelo e-mail ouvidoria@maisdental.com.
+                </p>
+            </div>
+    </div>
+    </section>
+
+    <button class="fixed bottom-4 right-4 hover:scale-125 duration-300">
+        <a href="#" target="_blank">
+            <img src="./images/whats.png" title="Fale Conosco" alt="Fale Conosco" class="w-16"/>
+        </a>
+    </button>
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
