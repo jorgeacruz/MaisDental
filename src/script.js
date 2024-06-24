@@ -11,6 +11,7 @@ button.addEventListener('click', (e)=>{
   close.classList.toggle('hidden');
 });
 
+
 //contagem de numeros
 const tempo_intervalo = 10; //ms -> define a velocidade da animação
 const tempo = 1000; //ms -> define o tempo total da animaçao
