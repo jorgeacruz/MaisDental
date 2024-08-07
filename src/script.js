@@ -34,3 +34,11 @@ $('.counter-up').each(function() {
     valor += incremento;      
   }, tempo_intervalo);
 });
+
+// animations by logomotive
+const pageContainer = document.querySelector('#container')
+
+const scroller = new LocomotiveScroll({
+  el: pageContainer,
+  smooth:true
+})

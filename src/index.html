@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mais Dental - Vantagens</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'/>
     <link rel="stylesheet" href="../styles/output.css">
     
 </head>
-<body class="bg-white">
-    <header class="p-3 bg-white fixed w-full">
+<body class="bg-white" id="container">
+    <header class="p-3 bg-white fixed w-full border border-black">
         <div class="container mx-auto flex justify-between items-center">
           <img class="w-32" src="./images/logo.jpg" alt="Mais Dental - Vantagens">
       <div>
@@ -32,7 +33,7 @@
             <a href="#credenciada" title"Go to XXX" class="transition ease-in-out duration-150 hover:text-black">Rede credenciadas</a>
           </li>
           <li class="md:border-r md:px-4 md:border-red-200">
-            <a href="#procedimentos" title"Go to XXX" class="transition ease-in-out duration-150 hover:text-black">Procedimentos Realizados</a>
+            <a href="#procedimentos" title"Go to XXX" class="transition ease-in-out duration-150 hover:text-black" id="close">Procedimentos Realizados</a>
           </li>
           <li class="md:border-r md:px-4 md:border-red-200">
             <a href="#planos" title"Go to XXX" class="transition ease-in-out duration-150 hover:text-black">Planos Odontológicos</a>
@@ -55,7 +56,7 @@
     </section>
 
     <!-- sessão Azul -->
-    <section class="w-full p-4 bg-primary flex flex-col items-center justify-center gap-5 md:py-24">
+    <section  class="w-full p-4 bg-primary flex flex-col items-center justify-center gap-5 md:py-24">
         <!-- titles -->
         <div class="flex flex-col justify-center text-white text-center gap-2 mb-6">
             <h1 class="text-3xl md:text-7xl font-single">Muito mais que</h1>
@@ -102,7 +103,7 @@
     </section>
 
     <!-- Rede Credenciada -->
-    <section class="w-full h-auto p-8 flex flex-col gap-6 justify-center items-center md:py-24">
+    <section class="w-full h-auto p-8 flex flex-col gap-6 justify-center items-center md:pt-24 md:p-10">
         <div class="w-full max-w-6xl flex flex-col">
            
             <h1 class="text-3xl text-forth font-single md:text-5xl">Rede Credenciada</h1>
@@ -113,6 +114,26 @@
             <img src="./images/grafico1.png" alt="Atendimentos 2023" title="" />
             <h4 class="mt-5 text-xl font-thin">Total de dentistas credenciados</h4>
             <h1 class="counter-up text-7xl text-forth font-single" data-count-to="10347"></h1>
+        </div>
+        <a id="procedimentos"></a>
+    </section>
+
+      <!-- A mais Proxima -->
+      <section class="w-full h-auto flex flex-col justify-center items-center  p-8">
+        <div class="w-full max-w-6xl flex flex-row">
+           <div class="w-[800px] absolute">
+               <h1 class="text-2xl text-secondary font-Metropolis_bold md:text-5xl">... e mais proxima</h1>
+               <h1 class="text-2xl text-secondary font-Metropolis_bold md:text-5xl">de você.</h1>
+            <div class="hidden md:flex flex-col gap-2">
+                <h4 class="mt-5 text-3xl font-bold">Rio de Janeiro</h4>
+                <h4 class="text-2xl font-light">São Paulo</h4>
+                <h4 class="text-2xl font-light">Distrito Federal</h4>
+                <h4 class="text-2xl font-light">Minas Gerais</h4>
+            </div>
+           </div>
+            <div class="">
+                <img src="./images/mapa.png" alt="Atendimentos 2023" title="Atendimentos 2023" class="w-[1200px]"/>
+            </div>
         </div>
         <a id="procedimentos"></a>
     </section>
@@ -133,14 +154,16 @@
         <a id="planos"></a>
     </section>
 
+   
+
     <!-- Planos Odontologicos -->
     <section class="w-full p-8 bg-third flex justify-center items-center md:py-16 md:flex flex-col gap-6">
         <div>
             <h1 class="text-4xl text-primary font-single md:text-5xl">Planos Odontológicos</h1>
         </div>
-        <div class="w-full max-w-6xl justify-center grid md:grid-cols-3 gap-3 ">
+        <div class="w-full max-w-6xl justify-center grid md:grid-cols-3 gap-0 ">
             <!-- Plano Implante -->
-            <div class="bg-white shadow-md w-[320px] h-auto flex flex-col justify-start align-middle gap-5 rounded p-8 mb-2 md:w-[360px] border-0 border-green-600 hover:border-4  hover:scale-105 duration-300">
+            <div class="bg-white shadow-md w-[320px] h-auto flex flex-col justify-start align-middle gap-5 rounded p-8 mb-2 md:w-[360px] border-0 border-green-600 hover:border-4 hover:scale-105 duration-300">
                 <img src="../src/images/implate.png" alt="Planos Odontológicos" title="Planos Odontológicos" class="h-16 w-52"/>
                 <h3 class="font-bold text-green-600">DENTAL IMPLANTE MAIS</h3>
                 <p>
@@ -193,7 +216,7 @@
           </div>
           <a id="faleconosco"></a>
     </section>
-    
+
  <!-- Rodapé -->
  <section class="w-full p-8 bg-primary flex justify-center items-center md:py-16 md:flex flex-col gap-6">
     
@@ -224,7 +247,7 @@
             <h3>FALE CONOSCO</h3>
             <p>Telefone: (21) 298989-9999</p>
             <p>WhatsApp: (21) 298989-9999</p>
-            <p>E-mail: faleconosco@maisdental.com/p>
+            <p>E-mail: contato@maisdental.com/p>
             
         </div>
       </div>
@@ -249,7 +272,7 @@
 </section>
 
 
-<button class="fixed bottom-4 right-4 hover:scale-125 duration-300">
+<button class="hidden md:flex fixed bottom-4 right-4 hover:scale-125 duration-300">
     <a href="https://wa.me/5521989877878?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços." target="_blank">
         <img src="./images/whats.png" title="Fale Conosco" alt="Fale Conosco" class="w-16"/>
     </a>
@@ -258,5 +281,9 @@
 </body>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<!-- LocomotiveScroller -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
 <script src="script.js"></script>
 </html>
