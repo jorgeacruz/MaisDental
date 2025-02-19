@@ -1,13 +1,12 @@
-<h1 style='text-align:center'> Landing Page - MaisDental</h1>
+# MaisDental
 <a href="https://mais-dental.netlify.app">
 <img src="./src/images/screenshot.png"/>
 </a>
-<h2>Description</h2>
+
 <p>
-Using Tailwind, I created a landing page to capture leads and ensure all responsive requirements.</p>
+Following the design created by Márcio Nilo, a representative of MaisDental, I used Tailwind CSS to ensure compliance with specifications and responsiveness.</p>
 
 
 <p>Design: Marcio Nilo</br>
 Client: MaisDental</p>
 
-<h3>Dev: <span style='color:#0046fe'>Jorge Cruz</span></h3>
